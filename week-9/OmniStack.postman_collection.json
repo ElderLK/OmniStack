@@ -1,0 +1,249 @@
+{
+	"variables": [],
+	"info": {
+		"name": "OmniStack",
+		"_postman_id": "3acf95a5-098f-ee18-ee88-7940f5f31039",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "week-9",
+			"description": "",
+			"item": [
+				{
+					"name": "Store Session",
+					"request": {
+						"url": "{{base_url}}/sessions",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"elder@email.com\"\n}"
+						},
+						"description": "localhost:3333/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Store Spots",
+					"request": {
+						"url": "{{base_url}}/spots",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"description": "",
+								"disabled": true
+							},
+							{
+								"key": "user_id",
+								"value": "5d9a34c4cbb3261d08707199",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "thumbnail",
+									"description": "",
+									"type": "file",
+									"src": "rocketSeat.png"
+								},
+								{
+									"key": "company",
+									"value": "Rocketseat",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "68",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "techs",
+									"value": "ReactJS, NodeJS, React Native ",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "localhost:3333/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Store Booking",
+					"request": {
+						"url": "{{base_url}}/spots/5d9a71baef745c406c69d24b/booking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "user_id",
+								"value": "5d9a34c4cbb3261d08707199",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"date\" : \"05 de outubro\"\n}"
+						},
+						"description": "localhost:3333/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Spots",
+					"request": {
+						"url": {
+							"raw": "{{base_url}}/spots?tech=ReactJS",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"spots"
+							],
+							"query": [
+								{
+									"key": "tech",
+									"value": "ReactJS",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"description": "",
+								"disabled": true
+							},
+							{
+								"key": "user_id",
+								"value": "5d9a34c4cbb3261d08707199",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "thumbnail",
+									"description": "",
+									"type": "file",
+									"src": "rocketSeat.png"
+								},
+								{
+									"key": "company",
+									"value": "Rocketseat",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "68",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "techs",
+									"value": "ReactJS, NodeJS, React Native ",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "localhost:3333/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Get DashBoard",
+					"request": {
+						"url": {
+							"raw": "{{base_url}}/spots?tech=ReactJS",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"spots"
+							],
+							"query": [
+								{
+									"key": "tech",
+									"value": "ReactJS",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"description": "",
+								"disabled": true
+							},
+							{
+								"key": "user_id",
+								"value": "5d9a34c4cbb3261d08707199",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "thumbnail",
+									"description": "",
+									"type": "file",
+									"src": "rocketSeat.png"
+								},
+								{
+									"key": "company",
+									"value": "Rocketseat",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "68",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "techs",
+									"value": "ReactJS, NodeJS, React Native ",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "localhost:3333/users"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

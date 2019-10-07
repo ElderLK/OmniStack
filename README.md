@@ -10,6 +10,7 @@ VSCode - Extensions (recommended)
 - Rocketseat ReactJS
 - Rocketseat React Native
 - Font firacode
+- Color Highlight
 
 Para depois
 - JWT autenticação 
