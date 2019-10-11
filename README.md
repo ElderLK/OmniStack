@@ -14,3 +14,10 @@ VSCode - Extensions (recommended)
 
 Para depois
 - JWT autenticação 
+
+Para Mobile
+- npm install -g expo-cli
+- expo init mobile
+
+- Ferraments de disigner
+- SKETCH, FIGMA, XD, ZEPPELIN, Adobe XD
